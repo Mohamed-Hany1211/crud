@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --h1-ff:'Pacifico', cursive;
+    --h2-ff:'Righteous', cursive;
+    --label-ff:'PT Sans Caption', sans-serif;
+    --main-color:#BBD2C5;
+    --secondry-color:#536976;
+    --visit-btn-color:#2E8A99;
+    --clear-btn-color:#F24C3D;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+/* Bookmarker */
+
+.first-div h1{
+    font-size: 3.125rem;
+    font-weight: 500;
+    font-family: var(--h1-ff);
+    color: var(--secondry-color);
+    z-index: 0;
+}
+
+.h1-layer{
+    height: 25%;
+    width: 90%;
+    background-color:rgba(120, 149, 203,0.6);
+    opacity: 0.65;
+    z-index: 200;
+    bottom: .625rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.first-div{
+    width: 300px;
+} 
+
+.first-div:hover .h1-layer{
+    height: 55%;
+}
+
+.second-div h2{
+    margin: 0rem .625rem;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    font-family: var(--h2-ff);
+    color: var(--secondry-color);
+}
+
+.fa-bookmark{
+    font-size: 25px;
+    color: var(--secondry-color);
+}
+
+.inputs label{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--label-ff);
+    margin-top: 25px;
+    margin-bottom: .3125rem;
+}
+
+.inputs input{
+    border: 1px solid var(--secondry-color);
+    border-radius: 5px;
+}
+
+.fa-book-bookmark,.fa-link{
+    margin-right: .3125rem;
+}
+
+
+.inputs button{
+    width: 10rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: var(--label-ff);
+    color: white;
+    background-color:rgba(83, 105, 118 , 0.88);
+}
+
+.inputs button:hover{
+    background-color:rgba(83, 105, 118 ,1);
+    color: white;
+}
+
+.btn1{
+    background-color:rgba(46, 138, 153,0.88);
+    color: white;
+}
+
+.btn1:hover{
+    background-color:rgba(46, 138, 153,1);
+    color: white;
+}
+
+.btn2{
+    background-color:rgba(242, 76, 61,0.88);
+    color: white;
+}
+
+.btn2:hover{
+    background-color:rgba(242, 76, 61,1);
+    color: white;
+}

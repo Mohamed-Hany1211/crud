@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Bookmarker section -->
+    <section class="Bookmarker mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="box d-flex flex-column">
+                        <div
+                            class="first-div mb-5 d-flex flex-column align-items-center position-relative align-self-center">
+                            <h1>Bookmarker</h1>
+                            <div class="h1-layer position-absolute"></div>
+                        </div>
+                        <div class="second-div text-center d-flex justify-content-center align-items-center pt-3 mb-5">
+                            <i class="fa-solid fa-bookmark "></i>
+                            <h2>Bookmark your favorite sites</h2>
+                            <i class="fa-solid fa-bookmark"></i>
+                        </div>
+                        <div class="inputs d-flex flex-column">
+                            <label for="#"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+                            <input type="text" class="form-control" placeholder="Bookmark Name" id="site-name">
+                            <label for="#"><i class="fa-solid fa-link"></i> Site URL</label>
+                            <input type="text" class="form-control" placeholder="Website URL" id="site-url">
+                            <button class="btn align-self-center mt-4 mb-5" onclick="addWebsite();">Submit</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="table-box text-center">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Index</th>
+                                        <th scope="col">Website Name</th>
+                                        <th scope="col">Visit</th>
+                                        <th scope="col">Delete</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody">
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------->
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
